@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns="http://java.sun.com/xml/ns/javaee"
+	xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd"
+	metadata-complete="true" version="3.0">
+	<display-name>101 Tutorial</display-name>
+
+	<servlet>
+		<servlet-name>Json</servlet-name>
+		<servlet-class>Json</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>Json</servlet-name>
+		<url-pattern>/Json.do</url-pattern>
+	</servlet-mapping>
+
+
+
+	<welcome-file-list>
+		<welcome-file>home.jsp</welcome-file>
+	</welcome-file-list>
+
+
+
+
+	<listener>
+		<listener-class>Listener</listener-class>
+	</listener>
+
+
+
+</web-app>
